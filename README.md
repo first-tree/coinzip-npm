@@ -1,4 +1,6 @@
-const Coinzip = require('./lib/coinzip');
+# Usage
+```
+const Coinzip = require('coinzip');
 
 const start = async () => {
   const coinzip = new Coinzip({key: "xxx", secret: "xxx"});
@@ -8,5 +10,4 @@ const start = async () => {
 
 start();
 
-
-
+```  
