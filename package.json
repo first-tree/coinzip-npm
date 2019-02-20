@@ -1,0 +1,24 @@
+{
+  "name": "coinzip",
+  "version": "1.0.0",
+  "description": "Coinzip API wrapper for npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/first-tree/coinzip-npm.git"
+  },
+  "keywords": [
+    "coinzip",
+    "api",
+    "npm"
+  ],
+  "author": "Ardee Aram",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/first-tree/coinzip-npm/issues"
+  },
+  "homepage": "https://github.com/first-tree/coinzip-npm#readme"
+}
