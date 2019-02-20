@@ -1,3 +1,5 @@
+# Usage
+```
 const Coinzip = require('./lib/coinzip');
 
 const start = async () => {
@@ -8,5 +10,4 @@ const start = async () => {
 
 start();
 
-
-
+```  
