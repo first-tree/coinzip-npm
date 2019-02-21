@@ -4,7 +4,7 @@
   "description": "Coinzip API wrapper for npm",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "xo && nyc ava",
     "start": "node app.js"
   },
   "repository": {
@@ -25,5 +25,21 @@
   "dependencies": {
     "request": "^2.88.0",
     "request-promise": "^4.2.4"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {
+    "ava": "^1.2.1",
+    "codecov": "^3.2.0",
+    "nyc": "^13.3.0",
+    "xo": "^0.24.0"
+  },
+  "nyc": {
+    "reporter": [
+      "html",
+      "lcov",
+      "text"
+    ]
   }
 }

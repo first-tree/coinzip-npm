@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/first-tree/coinzip-npm.svg?branch=master)](https://travis-ci.org/first-tree/coinzip-npm)
+
 # Usage
 ```
 const Coinzip = require('coinzip');
@@ -10,7 +12,7 @@ const start = async () => {
 
 start();
 
-```  
+```
 
 # License
 

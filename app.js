@@ -1,8 +1,6 @@
 const Coinzip = require('./lib/coinzip');
 
-module.exports = ( _ => {
-  return Coinzip;
-})(); 
+module.exports = (() => Coinzip)();
 
 /**
 
@@ -11,13 +9,10 @@ module.exports = ( _ => {
 const Coinzip = require('coinzip');
 
 const start = async () => {
-  const coinzip = new Coinzip({key: "xxx", secret: "xxx"});
-  const tickers = await coinzip.getTickers({market: "ethbtc"});
-  console.log(tickers);
-}
+	const coinzip = new Coinzip({key: 'xxx', secret: 'xxx'});
+	const tickers = await coinzip.getTickers({market: 'ethbtc'});
+	console.log(tickers);
+};
 
 start();
 **/
-
-
-
