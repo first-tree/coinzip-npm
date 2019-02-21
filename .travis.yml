@@ -23,8 +23,12 @@ matrix:
       env: FRESH_DEPS=false
     - node_js: 9
       os: windows
+    - node_js: 9
+      env: FRESH_DEPS=false
     - node_js: 7
       os: windows
+    - node_js: 7
+      env: FRESH_DEPS=false
 cache: npm
 before_install: if [[ "$(npm -v)" != "6.6.0" ]] && [[ "${TRAVIS_OS_NAME}" != "windows" ]]; then npm install --global npm@6.6.0; fi
 install:
