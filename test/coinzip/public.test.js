@@ -12,13 +12,15 @@ test('Make sure all methods are defined', t => {
 /**
  * Make Sure all methods are Promise-ified.
  * No need make an actual http requests
- * This is not actually necessary but I just put it for documentation purposes.
+ * This is not actually necessary but I
+ * just put it for documentation purposes and also
+ * to check the actual behaviors.
  **/
 
 test('getTickers() returns an error if market is undefined or missing', async t => {
   const error = await t.throwsAsync(() => pub.getTickers(), Error);
 
-  t.is(error.message, 'Cannot destructure property `market` of \'undefined\' or \'null\'.');
+  t.truthy(error.message);
 });
 
 test('getTickers() returns error if market doesn\'t exists', async t => {
