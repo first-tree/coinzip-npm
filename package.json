@@ -1,6 +1,6 @@
 {
   "name": "coinzip",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Coinzip API wrapper for npm",
   "main": "app.js",
   "scripts": {
