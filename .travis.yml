@@ -6,13 +6,23 @@ node_js:
   - 11
   - 10
   - 8
-  - 6
+  - 9
+  - 7
 env:
   - FRESH_DEPS=false
   - FRESH_DEPS=true
+matrix:
+  exclude:
+    - node_js: 11
+      env: FRESH_DEPS=false
+    - node_js: 10
+      env: FRESH_DEPS=false
+    - node_js: 8
+      env: FRESH_DEPS=false
 cache: npm
 before_install: if [[ "$(npm -v)" != "6.6.0" ]] && [[ "${TRAVIS_OS_NAME}" != "windows" ]]; then npm install --global npm@6.6.0; fi
-install: npm ci
+install:
+ - npm ci
 before_script: |
   if [[ ${FRESH_DEPS} == "true" ]]; then
     npm install --no-shrinkwrap --prefer-online
