@@ -1,6 +1,6 @@
 const Coinzip = require('./lib/coinzip');
 
-module.exports = (() => Coinzip)();
+module.exports = (_ => Coinzip)();
 
 /**
 
