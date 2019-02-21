@@ -41,5 +41,8 @@
       "lcov",
       "text"
     ]
-  }
+  },
+	"xo": {
+		"space": true
+	}
 }
